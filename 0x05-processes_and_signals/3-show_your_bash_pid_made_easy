@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays the PID, along with the process name
+# shellcheck disable=SC2009
+
+for pid in /proc/[0-9]*; do
+  if [[ -f "$pid/comm" ]] && grep -iq "bash" "$pid/comm"; then
+	  echo "$(basename "$pid") $(cat "$pid/comm")"
+  fi
+done
