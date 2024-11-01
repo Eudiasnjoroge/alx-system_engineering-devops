@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# write a Bash script that displays lines containing the bash word
+# shellcheck disable=SC2009
+
+ps -eH -o user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,command | grep -i bash
