@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Write a Bash script that displays a list of currently running processes
 
-ps -eH -o user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,command
+ps -eH -o user,stime:9,cmd | grep -w bash | awk 'BEGIN {print "USER STARTED COMMAND"} {print $1, $2, $3, $4}'
