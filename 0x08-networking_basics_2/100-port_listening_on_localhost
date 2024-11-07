@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script listens on port 98 on localhost and displays incoming messages
+# Run Netcat in listening mode (-l) on port 98 for IPv4 only
+
+sudo nc -l -p 98 -s 127.0.0.1
