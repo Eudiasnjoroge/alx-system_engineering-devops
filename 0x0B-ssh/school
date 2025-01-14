@@ -1,3 +1,8 @@
+Host school
+    HostName <your_server_ip>   # Replace <your_server_ip> with the actual IP of your server
+    User ubuntu                 # Replace with the correct username for your server
+    IdentityFile ~/.ssh/school  # Path to your private key file
+    PasswordAuthentication no   # Disables password authentication
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABCwGY0Qt2
 tCv0lP4nOjMOYcAAAAEAAAAAEAAAIXAAAAB3NzaC1yc2EAAAADAQABAAACAQC/qFKWsN11
